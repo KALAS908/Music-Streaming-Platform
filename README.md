@@ -1,5 +1,4 @@
 This project is a backend implementation for a Music Streaming App. The backend exposes REST endpoints to manage subscriptions, which are consumed by a separate frontend system. All subscription data is stored in an SQL database, and the solution adheres to the specified business rules and requirements.
-
 The application includes functionality for adding and deleting subscriptions, with validations and constraints as described below.
 
 #Features
@@ -27,7 +26,7 @@ Request Structure:
 
 ---
 
-## Delete a Subscription - Conditions for Deletion
+##2. Delete a Subscription - Conditions for Deletion
 
 - The deletion is allowed only if the subscription's status is either:
   - **EXPIRED**
@@ -37,14 +36,6 @@ Request Structure:
   - If deletion is successful: Returns a successful HTTP code (e.g., 200 OK) with no body.
   - If deletion is not allowed: Returns the message:  
     *"The subscription is used; it cannot be deleted."*
-
-
-2. Delete a Subscription
-  Allows users to delete subscriptions stored in the database. The following rules apply:
-  Conditions for Deletion:
-  The deletion is allowed only if the subscription's status is either: EXPIRED / CANCELLED
-  If deletion is successful: The response contains only a successful HTTP code (e.g., 200 OK) with no body.
-  If deletion is not allowed:  The response contains the message: "The subscription is used; it cannot be deleted."
 
 Unit Tests
 Unit tests have been implemented for service methods, ensuring coverage of at least 70% per branch.

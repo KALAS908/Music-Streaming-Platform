@@ -1,7 +1,7 @@
 This project is a backend implementation for a Music Streaming App. The backend exposes REST endpoints to manage subscriptions, which are consumed by a separate frontend system. All subscription data is stored in an SQL database, and the solution adheres to the specified business rules and requirements.
 The application includes functionality for adding and deleting subscriptions, with validations and constraints as described below.
 
-#Features
+# Features
 1. Add a Subscription
   Allows users to add new subscriptions to the platform. The following business rules apply:
   Validation Rules:
@@ -26,7 +26,7 @@ Request Structure:
 
 ---
 
-##2. Delete a Subscription - Conditions for Deletion
+## 2. Delete a Subscription - Conditions for Deletion
 
 - The deletion is allowed only if the subscription's status is either:
   - **EXPIRED**

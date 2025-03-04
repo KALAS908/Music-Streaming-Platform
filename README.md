@@ -5,8 +5,8 @@ The application includes functionality for adding and deleting subscriptions, wi
 ## 1. Add a Subscription
   - Allows users to add new subscriptions to the platform. The following business rules apply:
   - Validation Rules:
-  - **If there is already a subscription with the same userId, plan, and startDate, the request will be rejected.**
-  - **The user will receive the message: "There is already a subscription with the same user, plan, and start date."**
+    - If there is already a subscription with the same userId, plan, and startDate, the request will be rejected.
+    - The user will receive the message: "There is already a subscription with the same user, plan, and start date."
 
 Request Structure:
   # Music Streaming App - Backend Implementation
